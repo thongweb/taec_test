@@ -14,6 +14,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
     margin: -20px 0 50px;
+    font-family: tahoma;
 }
 
 h1 {
@@ -254,4 +255,83 @@ footer a {
 }
 input[name="phone"] {
     margin-bottom: 30px;
+}
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .label-radius {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  /* On mouse-over, add a grey background color */
+  .label-radius:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .label-radius input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .label-radius input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .label-radius .checkmark:after {
+        top: 6px;
+        left: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+  input[type="radio"] {
+      display: none !important;
+  }
+  .Polaris-ChoiceList__Title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2rem;
+    text-transform: none;
+    letter-spacing: normal;
+    display: block;
+    margin: 0 0 .4rem;
+    padding: 0;
+    font-weight: bold;
+}
+.reading-radio {
+    margin-top: 15px;
+}
+@media only screen and (min-width: 600px) {
+    .reading-radio {
+        display: flex;
+    }
+    .reading-left {
+        width: 50%;
+    }
 }
