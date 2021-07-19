@@ -15,6 +15,7 @@ body {
     height: 100vh;
     margin: -20px 0 50px;
     font-family: tahoma;
+    font-size: 14px;
 }
 
 h1 {
@@ -96,10 +97,8 @@ input {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
     0 10px 10px rgba(0,0,0,0.22);
     position: relative;
-    overflow: hidden;
     width: 768px;
     max-width: 100%;
-    min-height: 540px;
     height: auto;
 }
 
@@ -334,4 +333,71 @@ input[name="phone"] {
     .reading-left {
         width: 50%;
     }
+}
+/* css input text*/
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  text-align: center;
+  width: 50%;
+  border: 0;
+  border-bottom: 1px solid #9b9b9b;
+  outline: 0;
+  font-size: 14px;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: black;
+}
+/* css table*/
+.question-1 table td {
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+.question-1 table tr {  
+    width: 50%;
+}
+.question-1 table thead th {  
+    border: 1px solid;
+}
+.question-1 table span, .question-1 table b , .question-1 table th{
+    padding-left: 40px;
+}
+.question-1 table{
+    border-bottom: 1px solid;
+    margin: 25px 0px;
+}
+/* css section 3 */
+.question-3 table {
+    width: 100%;
+}
+.question-3 table td {
+    width: 50%;
+}
+/* css section 4 */
+.question-4 .container {
+    max-width: 75%;
+    border: 2px solid;
+    box-shadow: none;
+    padding: 5%;
+}
+.question-4 .container .form__field {
+    width: 30% !important;
 }
