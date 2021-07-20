@@ -13,9 +13,10 @@ body {
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
-    margin: -20px 0 50px;
+    margin: 30px 0 50px;
     font-family: tahoma;
     font-size: 14px;
+    height: auto;
 }
 
 h1 {
@@ -33,10 +34,6 @@ p {
     line-height: 20px;
     letter-spacing: 0.5px;
     margin: 20px 0 30px;
-}
-
-span {
-    font-size: 12px;
 }
 
 a {
@@ -86,8 +83,6 @@ form {
 input {
     background-color: #eee;
     border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
     width: 100%;
 }
 
@@ -313,7 +308,7 @@ input[name="phone"] {
       display: none !important;
   }
   .Polaris-ChoiceList__Title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 2rem;
     text-transform: none;
@@ -344,12 +339,11 @@ input[name="phone"] {
 
 .form__field {
   text-align: center;
-  width: 50%;
+  width: 35%;
   border: 0;
   border-bottom: 1px solid #9b9b9b;
   outline: 0;
   font-size: 14px;
-  padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
 }
@@ -367,22 +361,16 @@ input[name="phone"] {
   color: black;
 }
 /* css table*/
-.question-1 table td {
+.section-1 table td {
     border-left: 1px solid;
     border-right: 1px solid;
 }
-.question-1 table tr {  
-    width: 50%;
-}
-.question-1 table thead th {  
+
+.section-1 table thead th {  
     border: 1px solid;
 }
-.question-1 table span, .question-1 table b , .question-1 table th{
-    padding-left: 40px;
-}
-.question-1 table{
+.section-1 table{
     border-bottom: 1px solid;
-    margin: 25px 0px;
 }
 /* css section 3 */
 .question-3 table {
@@ -391,13 +379,6 @@ input[name="phone"] {
 .question-3 table td {
     width: 50%;
 }
-/* css section 4 */
-.question-4 .container {
-    max-width: 75%;
-    border: 2px solid;
-    box-shadow: none;
-    padding: 5%;
-}
-.question-4 .container .form__field {
+.reading-passage-3 .form__field{
     width: 30% !important;
 }
