@@ -2,9 +2,13 @@
 
 @section('body')
 <div class="container">
-    @include('test.listening')
-    @include('test.reading')
-    @include('test.writing')
+    {{ $user }}
+    <form action="{{ url('/test') }}" method="POST">
+        @csrf
+        @include('test.listening')
+        @include('test.reading')
+        @include('test.writing')
+    </form>
 </div>
 
 @endsection

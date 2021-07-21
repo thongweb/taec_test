@@ -16,3 +16,4 @@ use App\Http\Controllers\indexController;
 Route::get('/',[indexController::class, 'index']);
 Route::post('/',[indexController::class, 'login']);
 Route::get('/test',[indexController::class, 'showTest']);
+Route::post('/test',[indexController::class, 'doTest']);

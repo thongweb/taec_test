@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Users;
+use App\Models\Answers;
 
 class IndexController extends Controller
 {
@@ -28,8 +29,11 @@ class IndexController extends Controller
             return redirect(url('/test'));
         }
 
-        public function showTest(Users $user)
-        {
-            return view('test.index', ['user' => $user]);
-        }
+    public function showTest(Users $user)
+    {
+        return view('test.index', ['user' => $user]);
+    }
+    public function doTest(Request $request) {
+    }
+
 }
