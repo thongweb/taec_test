@@ -5,20 +5,33 @@
     box-sizing: border-box;
 }
 
-body {
+.content {
     background: #f6f5f7;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
+    height: 85vh;
     margin: 30px 0 50px;
     font-family: tahoma;
     font-size: 14px;
-    height: auto;
 }
-
+.test-content {
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: auto;
+    margin: 30px 0 50px;
+    font-family: tahoma;
+    font-size: 14px;
+}
+img[alt='logo'] {
+    width: 100%;
+}
 h1 {
     font-weight: bold;
     margin: 0;
@@ -30,17 +43,12 @@ h2 {
 
 p {
     font-size: 14px;
-    font-weight: 100;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    margin: 20px 0 30px;
 }
 
 a {
     color: #333;
     font-size: 14px;
     text-decoration: none;
-    margin: 15px 0;
 }
 
 button {
@@ -72,11 +80,15 @@ button.ghost {
     background: linear-gradient(to right, #FF4B2B, #FF416C);
 }
 .form-container input {
+    outline: none;
     background-color: #eee;
     border: none;
     padding: 12px 15px;
     margin: 8px 0;
     width: 100%;
+}
+.form-container input:focus {
+    border: 1px solid #d8d8d8;
 }
 .form-login {
     padding: 25px;
@@ -86,11 +98,12 @@ button.ghost {
 }
 @media (min-width: 600px) {
     .w-30 {
-        width: 30% !important;
+        width: 25% !important;
     }
 }
 .form-container {
     justify-content: center;
+    align-items: center;
 }
 .social-container li {
     border: 1px solid #DDDDDD;
@@ -98,7 +111,7 @@ button.ghost {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 0 5px;
+    margin-bottom: 15px;
     height: 40px;
     width: 40px;
 }
