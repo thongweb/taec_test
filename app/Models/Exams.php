@@ -2,22 +2,15 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Exams extends Model
 {
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+    use HasFactory;
     protected $fillable = [
-        'firs_name',
-        'last_name',
-        'email',
-        'phone',
-        'time',
-        'result'
+        'exam_name',
+        'description'
     ];
     public $timestamps = false;
     /**
@@ -28,5 +21,4 @@ class User extends Model
     protected $hidden = [
         'remember_token',
     ];
-
 }

@@ -11,16 +11,7 @@
 									<li  class="social"><i class="fab fa-google-plus-g"></i></li>
 									<li  class="social"><i class="fab fa-linkedin-in"></i></li>
 								</div>
-								@error('first_name')
-									<div class="alert alert-danger">{{ $message }}</div>
-								@enderror
-								@error('last_name')
-									<div class="alert alert-danger">{{ $message }}</div>
-								@enderror
 								@error('email')
-									<div class="alert alert-danger">{{ $message }}</div>
-								@enderror
-								@error('phone')
 									<div class="alert alert-danger">{{ $message }}</div>
 								@enderror
 					<input type="text" placeholder="Họ" name="first_name" value="{{ old('first_name') }}" class="{{ $errors->has('first_name') ? ' is-invalid' : '' }}"/>

@@ -2,15 +2,46 @@
 
 @section('body')
 <div class="test-content">
+    
+    <div id="countdown"><span id='minutes'></span></div>
     <div class="container bg-white">
-        {{ $user }}
-        <form action="{{ url('/test') }}" method="POST">
+        <input type="hidden" value="{{ $student->created_at }}" id="get-time">
+        <form action="{{ url('/test/'.$student->remember_token) }}" id="test-form" method="POST">
             @csrf
             @include('test.listening')
             @include('test.reading')
             @include('test.writing')
+            <input type="hidden" value="" name="exam_time" id="exam_time">
+            <input class='btn btn-success' type="submit" value='Hoàn thành'>
         </form>
     </div>
 </div>
 
+<script>
+    var startTime = document.getElementById('get-time').value;
+    var countDownDate = new Date(startTime);
+    countDownDate.setMinutes(countDownDate.getMinutes() + 45); 
+    countDownDate = new Date(countDownDate);
+    console.log('countDownDate', countDownDate);
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    // Get today's date and time
+    var now = new Date();
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+        
+    // Time calculations for days, hours, minutes and seconds
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+    // Output the result in an element with id="demo"
+    document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
+        
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("test-form").submit()
+    }
+    }, 1000);
+</script>
 @endsection
