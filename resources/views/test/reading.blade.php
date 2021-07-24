@@ -24,6 +24,7 @@
                     <span><b>1.</b> Australia is a young country.</span>
                 </div>
                 <div class="col-3 p-0 d-flex justify-content-around">
+                    <input type="hidden" name="read_1" value="" checked="true">
                     <label class="label-radius">Yes
                         <input type="radio" name="read_1" value="YES">
                         <span class="checkmark"></span>
@@ -39,6 +40,7 @@
                     <span><b>2.</b> The teachers are also easy to make friends.</span>
                 </div>
                 <div class="col-3 p-0 d-flex justify-content-around">
+                    <input type="hidden" name="read_2" value="" checked="true">
                     <label class="label-radius">Yes
                         <input type="radio" name="read_2" value="YES">
                         <span class="checkmark"></span>
@@ -54,6 +56,7 @@
                     <span><b>3.</b> 0-week is in the second week of the academic year.</span>
                 </div>
                 <div class="col-3 p-0 d-flex justify-content-around">
+                    <input type="hidden" name="read_3" value="" checked="true">
                     <label class="label-radius">Yes
                         <input type="radio" name="read_3" value="YES">
                         <span class="checkmark"></span>
@@ -69,6 +72,7 @@
                     <span><b>4.</b> Some students are from other countries.</span>
                 </div>
                 <div class="col-3 p-0 d-flex justify-content-around">
+                    <input type="hidden" name="read_4" value="" checked="true">
                     <label class="label-radius">Yes
                         <input type="radio" name="read_4" value="YES">
                         <span class="checkmark"></span>
@@ -84,6 +88,7 @@
                     <span><b>5.</b> The host students are new students.</span>
                 </div>
                 <div class="col-3 p-0 d-flex justify-content-around">
+                    <input type="hidden" name="read_5" value="" checked="true">
                     <label class="label-radius">Yes
                         <input type="radio" name="read_5" value="YES">
                         <span class="checkmark"></span>
@@ -127,6 +132,7 @@
                     <span><b>6.</b> There are two ways to start a conversation.</span>
                 </div>
                 <div class="col-3 p-0 d-flex justify-content-around">
+                    <input type="hidden" name="read_6" value="" checked="true">
                     <label class="label-radius">True
                         <input type="radio" name="read_6" value="TRUE">
                         <span class="checkmark"></span>
@@ -142,6 +148,7 @@
                     <span><b>7.</b> It is a good idea to talk about serious topics when you meet someone new.</span>
                 </div>
                 <div class="col-3 p-0 d-flex justify-content-around">
+                    <input type="hidden" name="read_7" value="" checked="true">
                     <label class="label-radius">True
                         <input type="radio" name="read_7" value="TRUE">
                         <span class="checkmark"></span>
@@ -157,6 +164,7 @@
                     <span><b>8.</b> It is more important to listen than to talk.</span>
                 </div>
                 <div class="col-3 p-0 d-flex justify-content-around">
+                    <input type="hidden" name="read_8" value="" checked="true">
                     <label class="label-radius">True
                         <input type="radio" name="read_8" value="TRUE">
                         <span class="checkmark"></span>
@@ -172,6 +180,7 @@
                     <span><b>9.</b> Most good friends are different from each other.</span>
                 </div>
                 <div class="col-3 p-0 d-flex justify-content-around">
+                    <input type="hidden" name="read_9" value="" checked="true">
                     <label class="label-radius">True
                         <input type="radio" name="read_9" value="TRUE">
                         <span class="checkmark"></span>
@@ -187,6 +196,7 @@
                     <span><b>10.</b> The Internet is not always a good way to make friends.</span>
                 </div>
                 <div class="col-3 p-0 d-flex justify-content-around">
+                    <input type="hidden" name="read_10" value="" checked="true">
                     <label class="label-radius">True
                         <input type="radio" name="read_10" value="TRUE">
                         <span class="checkmark"></span>
@@ -202,6 +212,7 @@
                     <span><b>11.</b> A sports team is the best way to meet new friends</span>
                 </div>
                 <div class="col-3 p-0 d-flex justify-content-around">
+                    <input type="hidden" name="read_11" value="" checked="true">
                     <label class="label-radius">True
                         <input type="radio" name="read_11" value="TRUE">
                         <span class="checkmark"></span>
@@ -216,6 +227,7 @@
             <p class="font-weight-bold mt-2 mb-1">Choose the right answer to complete the following sentences.</p>
             <div class="col-sm-12 p-0">
                 <legend class="Polaris-ChoiceList__Title">12. When you meet someone new it is important to …</legend>
+                <input type="hidden" name="read_12" value="" checked="true">
                 <label class="label-radius">A. laugh
                     <input type="radio" name="read_12">
                     <span class="checkmark"></span>
@@ -231,6 +243,7 @@
             </div>
             <div class="col-sm-12 p-0">
                 <legend class="Polaris-ChoiceList__Title">13. Good place to get to know people are …</legend>
+                <input type="hidden" name="read_13" value="" checked="true">
                 <label class="label-radius">A. clubs
                     <input type="radio" name="read_13">
                     <span class="checkmark"></span>
@@ -246,6 +259,7 @@
             </div>
             <div class="col-sm-12 p-0">
                 <legend class="Polaris-ChoiceList__Title">14. Sports clubs are …</legend>
+                <input type="hidden" name="read_14" value="" checked="true">
                 <label class="label-radius">A. boring
                     <input type="radio" name="read_14">
                     <span class="checkmark"></span>

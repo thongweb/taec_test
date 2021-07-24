@@ -51,7 +51,11 @@ class IndexController extends Controller
             $studentAnswer->student_id = $rememberToken->id;
             $studentAnswer->save();
             $question = Questions::where('exam_id', 1)->where('question_name', $key)->first();
-            
+            if ($val !== NULL && isset($question['correct_answer'])) { 
+                if ($question['correct_answer'] == $val) {
+                    $totalPoint += 0.2;
+                }
+            }
         }
         $examDetails = new ExamDetails();
         $examDetails->exam_id = 1;
@@ -59,6 +63,7 @@ class IndexController extends Controller
         $examDetails->date_of_exam = Carbon::now();
         $examDetails->exam_score = $totalPoint;
         $examDetails->exam_time = $request->exam_time;
+        $examDetails->writing = $request->writing;
         $examDetails->save();
         return redirect(url('/result/'.$rememberToken->remember_token));
     }

@@ -5,5 +5,5 @@
     <p class="my-2"> <span class="font-weight-bold">Topic 2:</span> Many students find it is harder to study at university or college compared to when they were in grade school. Why is this? What are some possible solutions for this problem?</p>
     <p class="my-2"> <span class="font-weight-bold">Topic 3:</span> : In some countries, most people prefer to rent their homes rather than buying them. What are the advantages and disadvantages of renting a home?</p>
     <p class="font-weight-bold m-0 text-center">ANSWER</p>
-    <textarea class="w-100" name="writing" maxlenght= "550" cols="50" rows="15"></textarea>
+    <textarea class="w-100" name="writing" maxlenght= "600" cols="50" rows="15"></textarea>
 </div>

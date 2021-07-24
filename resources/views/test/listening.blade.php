@@ -34,6 +34,10 @@
                     <td class="pl-2"><span>Phone number: <input type="input" class="form__field" placeholder="4"
                                 name="listen_4" /> </span></td>
                 </tr>
+                <tr>
+                    <td class="pl-2"><span><input type="input" class="form__field" placeholder="5"
+                                name="listen_5" /> </span></td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -46,6 +50,7 @@
         <div class="reading-radio">
             <div class="reading-left">
                 <legend class="Polaris-ChoiceList__Title">6. The color is ______.</legend>
+                <input type="hidden" name="listen_6" value="" checked='true'>
                 <label class="label-radius">A. Red
                     <input type="radio" name="listen_6" value="A">
                     <span class="checkmark"></span>
@@ -65,6 +70,7 @@
             </div>
             <div class="reading-right">
                 <legend class="Polaris-ChoiceList__Title">7. They are pair of _____.</legend>
+                <input type="hidden" name="listen_7" value="" checked='true'>
                 <label class="label-radius">A. Tennis shoes
                     <input type="radio" name="listen_7" value="A">
                     <span class="checkmark"></span>
@@ -86,6 +92,7 @@
         <div class="reading-radio">
             <div class="reading-left">
                 <legend class="Polaris-ChoiceList__Title">8. The price is _____.</legend>
+                <input type="hidden" name="listen_8" value="" checked='true'>
                 <label class="label-radius">A. More than $250
                     <input type="radio" name="listen_8" value="A">
                     <span class="checkmark"></span>
@@ -105,6 +112,7 @@
             </div>
             <div class="reading-right">
                 <legend class="Polaris-ChoiceList__Title">9. They are _____.</legend>
+                <input type="hidden" name="listen_9" value="" checked='true'>
                 <label class="label-radius">A. Very comfortable
                     <input type="radio" name="listen_9" value="A" value="A">
                     <span class="checkmark"></span>
