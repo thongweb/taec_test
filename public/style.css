@@ -250,3 +250,11 @@ input[name="phone"] {
 .reading-passage-3 .form__field{
     width: 30% !important;
 }
+.form-header {
+  background-color: #34495e;
+  color: #ecf0f1;
+  margin: 0px -15px;
+}
+.form-group .col-sm-1 {
+    padding-right: 0px !important;
+}

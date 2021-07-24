@@ -40,6 +40,9 @@
     <!-- listen section 2 -->
     <div class="section-2">
         <h5><b>Section 2</b></h5>
+        <audio controls>
+            <source src="{{ asset(url('audio/SECTION2.mp3')) }}" type="audio/mpeg">
+        </audio>
         <div class="reading-radio">
             <div class="reading-left">
                 <legend class="Polaris-ChoiceList__Title">6. The color is ______.</legend>
@@ -125,6 +128,9 @@
     <div class='section-3'>
         <h5><b>Section 3</b></h5>
         <h6><b>Questions 10 - 14</b></h6>
+        <audio controls>
+            <source src="{{ asset(url('audio/SECTION3.mp3')) }}" type="audio/mpeg">
+        </audio>
         <p>People are talking about health problems. What is each person’s problem?</p>
         <div class="col-12 d-flex align-items-center p-0">
             <div class="col-6 p-0"><b>10.</b>Julia<input type="input" class="form__field" name="listen_10" /></div>
@@ -149,10 +155,13 @@
     </div>
     <!-- listen section 4 -->
     <div class='section-4 mt-3'>
-        <h5><b>Section 3</b></h5>
+        <h5><b>Section 4</b></h5>
         <h6><b>Questions 10 - 14</b></h6>
         <b>Listen to the conversation and complete the notes.</b>
         <p>Write no more than <b>TWO WORDS AND/OR A NUMBER</b> for each answer.</p>
+        <audio controls>
+            <source src="{{ asset(url('audio/SECTION4.mp3')) }}" type="audio/mpeg">
+        </audio>
         <div class="border border-dark p-2">
             <div class="col-12 p-0"><span class="font-weight-bold">GOOD MOVES ACCOMMODATION AGENCY</span></div>
             <div class="col-12 p-0"><span>Call taken by: Ben</span></div>

@@ -2,9 +2,21 @@
 
 @section('body')
 <div class="test-content">
-    
-    <div id="countdown"><span id='minutes'></span></div>
     <div class="container bg-white">
+        <div class="form-header p-3 font-weight-bold">
+            <div class="form-group row">
+                <dt class="col-sm-1">Name: </dt>
+                <dd>{{ $student-> last_name }} {{ $student->first_name }}</dd>
+            </div>
+            <div class="form-group row">
+                <dt class="col-sm-1">Phone: </dt>
+                <dd>{{ $student-> phone }}</dd>
+            </div>
+            <div class="form-group row">
+                <dt class="col-sm-1">Time left: </dt>
+                <div id="countdown"><span id='minutes'></span></div>
+            </div>
+        </div>
         <input type="hidden" value="{{ $student->created_at }}" id="get-time">
         <form action="{{ url('/test/'.$student->remember_token) }}" id="test-form" method="POST">
             @csrf
@@ -22,7 +34,6 @@
     var countDownDate = new Date(startTime);
     countDownDate.setMinutes(countDownDate.getMinutes() + 45); 
     countDownDate = new Date(countDownDate);
-    console.log('countDownDate', countDownDate);
     // Update the count down every 1 second
     var x = setInterval(function() {
     // Get today's date and time
@@ -36,6 +47,7 @@
         
     // Output the result in an element with id="demo"
     document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
+    document.getElementById("exam_time").value = (45 - minutes) + "m " + (60 - seconds) + "s ";
         
     // If the count down is over, write some text 
     if (distance < 0) {
