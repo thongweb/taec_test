@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\indexController;
+use App\Http\Controllers\IndexController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +13,9 @@ use App\Http\Controllers\indexController;
 |
 */
 
-Route::get('/',[indexController::class, 'index']);
-Route::post('/',[indexController::class, 'login']);
-Route::get('/test/{remember_token}',[indexController::class, 'showTest']);
-Route::post('/test/{remember_token}',[indexController::class, 'doTest']);
+Route::get('/',[IndexController::class, 'index']);
+Route::post('/',[IndexController::class, 'login']);
+Route::get('/test/{remember_token}',[IndexController::class, 'showTest']);
+Route::post('/test/{remember_token}',[IndexController::class, 'doTest']);
 
-Route::get('/result/{remember_token}',[indexController::class, 'showResult']);
+Route::get('/result/{remember_token}',[IndexController::class, 'showResult']);

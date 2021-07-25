@@ -21,6 +21,10 @@
                 <dt class="col-sm-2">Reading score: </dt>
                 <div class="text-success">{{ $examDetail->score_read }} / 20</div>
             </div>
+            <div class="form-group row">
+                <dt class="col-sm-2">Exam time: </dt>
+                <div>{{ $examDetail->exam_time }}</div>
+            </div>
             <hr class="mb-4" style="border: 1px solid">
             <div class="form-group row">
                 <dt class="col-sm-2">Writing result: </dt>
@@ -33,7 +37,4 @@
         </div>
     </div>
 </div>
-<script>
-    
-</script>
 @endsection
