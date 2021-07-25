@@ -12,8 +12,10 @@ class ExamDetails extends Model
         'exam_id',
         'student_id',
         'date_of_exam',
-        'exam_score',
-        'exam_time'
+        'score_read',
+        'score_listen',
+        'exam_time',
+        'writing'
     ];
     public $timestamps = false;
     /**

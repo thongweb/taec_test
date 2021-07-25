@@ -24,7 +24,7 @@
             @include('test.reading')
             @include('test.writing')
             <input type="hidden" value="" name="exam_time" id="exam_time">
-            <input class='btn btn-success' type="submit" value='Hoàn thành'>
+            <input class='btn btn-successs' type="submit" value='Hoàn thành'>
         </form>
     </div>
 </div>

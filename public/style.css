@@ -258,3 +258,13 @@ input[name="phone"] {
 .form-group .col-sm-1 {
     padding-right: 0px !important;
 }
+.btn-successs {
+    color: #fff;
+    background-color: #34495e;
+    border-color: #34495e;
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+  }

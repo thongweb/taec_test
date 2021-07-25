@@ -229,15 +229,15 @@
                 <legend class="Polaris-ChoiceList__Title">12. When you meet someone new it is important to …</legend>
                 <input type="hidden" name="read_12" value="" checked="true">
                 <label class="label-radius">A. laugh
-                    <input type="radio" name="read_12">
+                    <input type="radio" name="read_12" value="A">
                     <span class="checkmark"></span>
                 </label>
                 <label class="label-radius">B. ignore
-                    <input type="radio" name="read_12">
+                    <input type="radio" name="read_12" value="B">
                     <span class="checkmark"></span>
                 </label>
                 <label class="label-radius">C. make eye contact
-                    <input type="radio" name="read_12">
+                    <input type="radio" name="read_12" value="C">
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -245,15 +245,15 @@
                 <legend class="Polaris-ChoiceList__Title">13. Good place to get to know people are …</legend>
                 <input type="hidden" name="read_13" value="" checked="true">
                 <label class="label-radius">A. clubs
-                    <input type="radio" name="read_13">
+                    <input type="radio" name="read_13" value="A">
                     <span class="checkmark"></span>
                 </label>
                 <label class="label-radius">B. private home
-                    <input type="radio" name="read_13">
+                    <input type="radio" name="read_13" value="B">
                     <span class="checkmark"></span>
                 </label>
                 <label class="label-radius">C. not easy to find
-                    <input type="radio" name="read_13">
+                    <input type="radio" name="read_13" value="C">
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -261,15 +261,15 @@
                 <legend class="Polaris-ChoiceList__Title">14. Sports clubs are …</legend>
                 <input type="hidden" name="read_14" value="" checked="true">
                 <label class="label-radius">A. boring
-                    <input type="radio" name="read_14">
+                    <input type="radio" name="read_14" value="A">
                     <span class="checkmark"></span>
                 </label>
                 <label class="label-radius">B. for everyone
-                    <input type="radio" name="read_14">
+                    <input type="radio" name="read_14" value="B">
                     <span class="checkmark"></span>
                 </label>
                 <label class="label-radius">C. for people who like team sports only.
-                    <input type="radio" name="read_14">
+                    <input type="radio" name="read_14" value="C">
                     <span class="checkmark"></span>
                 </label>
             </div>
