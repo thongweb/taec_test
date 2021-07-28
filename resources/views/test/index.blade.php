@@ -32,7 +32,7 @@
 <script>
     var startTime = document.getElementById('get-time').value;
     var countDownDate = new Date(startTime);
-    countDownDate.setMinutes(countDownDate.getMinutes() + 45); 
+    countDownDate.setMinutes(countDownDate.getMinutes() + 45);
     countDownDate = new Date(countDownDate);
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -44,7 +44,7 @@
     // Time calculations for days, hours, minutes and seconds
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
+
     // Output the result in an element with id="demo"
     document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
     document.getElementById("exam_time").value = (45 - minutes) + "m " + (60 - seconds) + "s ";

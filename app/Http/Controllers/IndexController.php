@@ -24,9 +24,10 @@ class IndexController extends Controller
             'first_name' => 'required',
             'last_name' => 'required',
             'email' => 'required|unique:students,email',
-            'phone' => 'required',
+            'phone' => 'required|unique:students,phone',
         ],[
-            'unique' => "Email is already used"
+            'email,unique' => "Email is already used",
+            'phone,unique' => "Phone is already used"
         ]);
         $us = new Students($request->all());
         $us->remember_token = Str::random(8).Carbon::now()->timestamp;
