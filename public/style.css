@@ -81,11 +81,6 @@ button.ghost {
 }
 .form-container input {
     outline: none;
-    background-color: #eee;
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
-    width: 100%;
 }
 .form-container input:focus {
     border: 1px solid #d8d8d8;
@@ -114,9 +109,6 @@ button.ghost {
     margin-bottom: 15px;
     height: 40px;
     width: 40px;
-}
-input[name="phone"] {
-    margin-bottom: 30px;
 }
 /* Create a custom radio button */
 .checkmark {
@@ -268,3 +260,27 @@ input[name="phone"] {
 textarea {
     resize: none;
   }
+  form input[type="text"], form input[type="password"], form input[type="email"], form input[type="url"], form input[type="date"], form input[type="month"], form input[type="time"], form input[type="datetime"], form input[type="datetime-local"], form input[type="week"], form input[type="number"], form input[type="search"], form input[type="tel"], form input[type="color"], form select, form textarea {
+    display: inline-block;
+    min-height: 40px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 6px 12px;
+    vertical-align: middle;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.form-login label {
+    width: 100%;
+}
