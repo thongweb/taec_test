@@ -5,9 +5,10 @@
 <div>
     <div class="container bg-white">
         <div class="form-header p-3 font-weight-bold">
-            <div class="form-group row">
+            <span class="text-warning">Cảm ơn <span class="font-weight-bold">{{ $student->first_name }}</span> đã hoàn thành bài test. Kết quả bài thi sẽ được thầy cô liên hệ trực tiếp tư vấn + Test Speaking nhanh để giúp bạn đánh giá đầy đủ kỹ năng và lựa chọn khóa học phù hợp nhất</span>
+            <div class="form-group mt-4 row">
                 <dt class="col-sm-2">Name: </dt>
-                <dd>{{ $student-> last_name }} {{ $student->first_name }}</dd>
+                <dd>{{ $student->first_name }}</dd>
             </div>
             <div class="form-group row">
                 <dt class="col-sm-2">Phone: </dt>
@@ -16,30 +17,40 @@
             <div class="form-group row">
                 <dt class="col-sm-2">Listening score: </dt>
                 <div class="text-success">@if(is_null($examDetail)) 0 @else {{ $examDetail->score_listen }} @endif / 20
-                <span class='text-white'>(@if(!is_null($examDetail) && $examDetail->score_listen <= 7)
-                A1
-                @elseif (!is_null($examDetail) && $examDetail->score_listen > 7 && $examDetail->score_listen <= 14)
-                A2
-                @elseif (!is_null($examDetail) && $examDetail->score_listen > 14)
-                B1
-                @endif)
                 </span>
                 </div>
             </div>
             <div class="form-group row">
                 <dt class="col-sm-2">Listening score: </dt>
                 <div class="text-success">@if(is_null($examDetail)) 0 @else {{ $examDetail->score_read }} @endif / 20
-                <span class='text-white'>(@if(!is_null($examDetail) && $examDetail->score_read <= 7)
-                A1
-                @elseif (!is_null($examDetail) && $examDetail->score_read > 7 && $examDetail->score_read <= 14)
-                A2
-                @elseif (!is_null($examDetail) && $examDetail->score_read > 14)
-                B1
-                @endif)
-                </span>
                 </div>
             </div>
-
+            <div class="form-group row">
+                <dt class="col-sm-2">Rank: </dt>
+                <div class="text-success">(@if(!is_null($examDetail) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  <= 6))
+                A1
+                @elseif (!is_null($examDetail) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  > 6) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  <= 11))
+                A2
+                @elseif (!is_null($examDetail) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  > 11) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  <= 16))
+                A2+
+                @elseif (!is_null($examDetail) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  > 17) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  <= 20))
+                B1
+                @endif)
+                </div>
+            </div>
+            <div class="form-group row">
+                <dt class="col-sm-2">Course: </dt>
+                <div class="tex-white">@if(!is_null($examDetail) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  <= 6))
+                IELTS PLATFORM
+                @elseif (!is_null($examDetail) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  > 6) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  <= 11))
+                IELTS DEPARTURE
+                @elseif (!is_null($examDetail) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  > 11) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  <= 16))
+                IELTS SPEED UP
+                @elseif (!is_null($examDetail) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  > 17) && (((int) ($examDetail->score_listen + $examDetail->score_read) / 2)  <= 20))
+                IELTS DESTIONATION
+                @endif
+                </div>
+            </div>
             <div class="form-group row">
                 <dt class="col-sm-2">Exam time: </dt>
                 <div>@if(is_null($examDetail)) 2h 45m @else {{ $examDetail->exam_time }} @endif</div>

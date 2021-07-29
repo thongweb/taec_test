@@ -13,6 +13,8 @@ class Students extends Model
         'last_name',
         'email',
         'phone',
+        'desired_score',
+        'branch',
         'remember_token'
     ];
     public $timestamps = true;

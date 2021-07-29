@@ -17,24 +17,24 @@
 			@endforeach
 			@endif
 			<p><label> Tên của bạn<br>
-					<span class="wpcf7-form-control-wrap your-name"><input type="text" placeholder="Họ"
+					<span class="wpcf7-form-control-wrap your-name"><input type="text" 
 							name="first_name" value="{{ old('first_name') }}"
 							class="{{ $errors->has('first_name') ? ' is-invalid' : '' }}" /></span> </label></p>
 			<p><label> Địa chỉ Email<br>
-					<span class="wpcf7-form-control-wrap your-email"><input id="title" type="email" placeholder="Email"
+					<span class="wpcf7-form-control-wrap your-email"><input id="title" type="email"
 							name="email" class="{{ $errors->has('email') ? ' is-invalid' : '' }}"
 							value="{{ old('email') }}"></span> </label></p>
 
 			<p><label> Số điện thoại:<br>
-					<span class="wpcf7-form-control-wrap tel-606"><input type="number" placeholder="Số điện thoại"
+					<span class="wpcf7-form-control-wrap tel-606"><input type="number" 
 							name="phone" value="{{ old('phone') }}"
 							class="{{ $errors->has('phone') ? ' is-invalid' : '' }}" /></span></label></p>
 			<p><label> Khóa học cần tư vấn / Điểm số mong muốn:<br>
-					<span class="wpcf7-form-control-wrap text-38"><input type="text" placeholder="Tên" name="last_name"
-							value="{{ old('last_name') }}"
-							class="{{ $errors->has('last_name') ? ' is-invalid' : '' }}" /></span></label></p>
+					<span class="wpcf7-form-control-wrap text-38"><input type="text" name="desired_score"
+							value="{{ old('desired_score') }}"
+							class="{{ $errors->has('desired_score') ? ' is-invalid' : '' }}" /></span></label></p>
 			<p><label> Cơ sở muốn đăng ký:<br>
-					<span class="wpcf7-form-control-wrap menu-693"><select name="menu-693"
+					<span class="wpcf7-form-control-wrap menu-693"><select name="branch"
 							class="wpcf7-form-control wpcf7-select" aria-invalid="false">
 							<option value="">---</option>
 							<option value="Quận 3">Quận 3</option>

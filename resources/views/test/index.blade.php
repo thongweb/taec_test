@@ -24,7 +24,9 @@
             @include('test.reading')
             @include('test.writing')
             <input type="hidden" value="" name="exam_time" id="exam_time">
-            <input class='btn btn-successs' type="submit" value='Hoàn thành'>
+            <input class='btn btn-danger mt-2 text-white' id="btn-check-word" type="button" onclick="checkWords()" value="Check count words">
+            <br>
+            <input class='btn mt-4 btn-successs' type="submit" value='Hoàn thành'>
         </form>
     </div>
 </div>
@@ -55,5 +57,11 @@
         document.getElementById("test-form").submit()
     }
     }, 1000);
+    function checkWords() {
+        var contentWriting = document.getElementById('content-writing').value;
+        var countString = contentWriting.match(/\w+/g).length;
+        alert('You have ' + countString + ' words section writing.')
+    }
+    
 </script>
 @endsection
