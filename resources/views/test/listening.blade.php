@@ -1,14 +1,14 @@
 <div class="col-12 p-0 mt-3">
-    
+
     <h5 class="font-weight-bold section-title"><span>I. LISTENING</span></h5>
     <h6 class="font-weight-bold m-0">Section 1</h6>
     <p class="font-weight-bold m-0">Question 1 - 5</p>
     <p class="font-weight-bold m-0">Listen to the conversation and complete the message pads.</p>
-    <audio id="myAudio" src="{{ asset(url('audio/SECTION1.mp3')) }}" >
-    </audio>
-    <button id="pause" onClick="togglePlay()">Click here to hear.</button>
-
-
+    <div id="audio-1" class="mt-3">
+        <audio controls id="myAudio-1">
+            <source src="{{ asset(url('audio/SECTION1.mp3')) }}" type="audio/mpeg">
+        </audio>
+    </div>
     <!-- listen section 1 -->
     <div class='section-1 mt-3'>
         <table class="w-100 mb-4 mt-2">
@@ -39,28 +39,29 @@
                 </tr>
                 <tr>
                     <td class="pl-2">
-                    <span class="font-weight-bold">5.</span>
-                    <input type="hidden" name="listen_5" value="" checked='true'>
-                    <label class="label-radius">Please call.
-                        <input type="radio" name="listen_5" value="Please call">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="label-radius">He/She will call you.
-                        <input type="radio" name="listen_5" value="He/She will call you">
-                        <span class="checkmark"></span>
-                    </label>
+                        <span class="font-weight-bold">5.</span>
+                        <input type="hidden" name="listen_5" value="" checked='true'>
+                        <label class="label-radius">Please call.
+                            <input type="radio" name="listen_5" value="Please call">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="label-radius">He/She will call you.
+                            <input type="radio" name="listen_5" value="He/She will call you">
+                            <span class="checkmark"></span>
+                        </label>
                     </td>
-                    <td></td>
                 </tr>
             </tbody>
         </table>
     </div>
     <!-- listen section 2 -->
     <div class="section-2">
-        <h6 class="font-weight-bold my-2">Section 2</h6>
-        <audio controls>
-            <source src="{{ asset(url('audio/SECTION2.mp3')) }}" type="audio/mpeg">
-        </audio>
+        <h5><b>Section 2</b></h5>
+        <div id="audio-2" class="mt-3">
+            <audio controls id="myAudio-2">
+                <source src="{{ asset(url('audio/SECTION2.mp3')) }}" type="audio/mpeg">
+            </audio>
+        </div>
         <div class="reading-radio">
             <div class="reading-left">
                 <legend class="Polaris-ChoiceList__Title">6. The color is ______.</legend>
@@ -148,11 +149,13 @@
     </div>
     <!-- listen section 3 -->
     <div class='section-3'>
-        <h6 class="font-weight-bold my-2">Section 3</h6>
-        <p><b>Questions 10 - 14</b></p>
-        <audio controls>
-            <source src="{{ asset(url('audio/SECTION3.mp3')) }}" type="audio/mpeg">
-        </audio>
+        <h5><b>Section 3</b></h5>
+        <h6><b>Questions 10 - 14</b></h6>
+        <div id="audio-3" class="mt-3">
+            <audio controls id="myAudio-3">
+                <source src="{{ asset(url('audio/SECTION3.mp3')) }}" type="audio/mpeg">
+            </audio>
+        </div>
         <p>People are talking about health problems. What is each person’s problem?</p>
         <div class="col-12 d-flex align-items-center p-0">
             <div class="col-6 p-0"><b>10.</b>Julia<input type="input" class="form__field" name="listen_10" /></div>
@@ -177,13 +180,15 @@
     </div>
     <!-- listen section 4 -->
     <div class='section-4 mt-3'>
-        <h6 class="font-weight-bold my-2">Section 4</h6>
-        <p><b>Questions 10 - 14</b></p>
+        <h5><b>Section 4</b></h5>
+        <h6><b>Questions 10 - 14</b></h6>
         <b>Listen to the conversation and complete the notes.</b>
         <p>Write no more than <b>TWO WORDS AND/OR A NUMBER</b> for each answer.</p>
-        <audio controls>
-            <source src="{{ asset(url('audio/SECTION4.mp3')) }}" type="audio/mpeg">
-        </audio>
+        <div id="audio-4" class="mt-3">
+            <audio controls id="myAudio-4">
+                <source src="{{ asset(url('audio/SECTION4.mp3')) }}" type="audio/mpeg">
+            </audio>
+        </div>
         <div class="border border-dark p-2">
             <div class="col-12 p-0"><span class="font-weight-bold">GOOD MOVES ACCOMMODATION AGENCY</span></div>
             <div class="col-12 p-0"><span>Call taken by: Ben</span></div>

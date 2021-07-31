@@ -92,8 +92,6 @@ class IndexController extends Controller
         return view('result.index', ['student' => $rememberToken, 'examDetail' => $examDetails]);
     }
 
-    
-
     public function downloadPDF($id) {
         $examDetails = ExamDetails::findOrFail($id);
 
@@ -107,6 +105,6 @@ class IndexController extends Controller
     
         $pdf = PDF::loadView('layout.resultPDF', $dataPDF);
         
-        return $pdf->download('writing-result.pdf');
+        return $pdf->download('writing-result-'.$studentInfo->first_name.'.pdf');
     }
 }

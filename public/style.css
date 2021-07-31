@@ -321,3 +321,8 @@ textarea {
 									   color-stop(0.72, rgb(98, 98, 99)),
 									   color-stop(0.86, rgb(53, 53, 53)));
 }
+.btn-play-audio {
+    color: white !important;
+    background: grey;
+    margin-top: 15px;
+}
