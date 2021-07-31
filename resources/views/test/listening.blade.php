@@ -5,6 +5,7 @@
     <p class="font-weight-bold m-0">Question 1 - 5</p>
     <p class="font-weight-bold m-0">Listen to the conversation and complete the message pads.</p>
     <div id="audio-1" class="mt-3">
+        <p class="text-danger font-weight-bold m-0"><span >Notice:</span> The audio file only plays once. Cannot pause or replay.</p>
         <audio controls id="myAudio-1">
             <source src="{{ asset(url('audio/SECTION1.mp3')) }}" type="audio/mpeg">
         </audio>
@@ -58,6 +59,7 @@
     <div class="section-2">
         <h5><b>Section 2</b></h5>
         <div id="audio-2" class="mt-3">
+            <p class="text-danger font-weight-bold m-0"><span >Notice:</span> The audio file only plays once. Cannot pause or replay.</p>
             <audio controls id="myAudio-2">
                 <source src="{{ asset(url('audio/SECTION2.mp3')) }}" type="audio/mpeg">
             </audio>
@@ -152,6 +154,7 @@
         <h5><b>Section 3</b></h5>
         <h6><b>Questions 10 - 14</b></h6>
         <div id="audio-3" class="mt-3">
+            <p class="text-danger font-weight-bold m-0"><span >Notice:</span> The audio file only plays once. Cannot pause or replay.</p>
             <audio controls id="myAudio-3">
                 <source src="{{ asset(url('audio/SECTION3.mp3')) }}" type="audio/mpeg">
             </audio>
@@ -181,10 +184,11 @@
     <!-- listen section 4 -->
     <div class='section-4 mt-3'>
         <h5><b>Section 4</b></h5>
-        <h6><b>Questions 10 - 14</b></h6>
+        <h6><b>Questions 15 - 20</b></h6>
         <b>Listen to the conversation and complete the notes.</b>
         <p>Write no more than <b>TWO WORDS AND/OR A NUMBER</b> for each answer.</p>
         <div id="audio-4" class="mt-3">
+            <p class="text-danger font-weight-bold m-0"><span >Notice:</span> The audio file only plays once. Cannot pause or replay.</p>
             <audio controls id="myAudio-4">
                 <source src="{{ asset(url('audio/SECTION4.mp3')) }}" type="audio/mpeg">
             </audio>

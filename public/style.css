@@ -293,6 +293,11 @@ textarea {
 .text-warning {
     font-size: 17px;
 }
+.text-thanks {
+    color: grey;
+    font-weight: bold;
+    font-size: 17px;
+}
 .section-title { border-bottom: 1px solid lightgray; }
 .section-title span { padding: 5px; background: lightgray; display: inline-block; }
 
