@@ -1,5 +1,5 @@
-<div class="col-12 p-0 mt-3">
-    <h5 class="font-weight-bold">II. READING</h5>
+<div class="col-12 p-0 mt-5">
+    <h5 class="font-weight-bold section-title"><span>II. READING</span></h5>
     <!-- Passage section 1 -->
     <p class="font-weight-bold m-0">Passage 1</p>
     <p class="font-weight-bold mb-3 text-center">STUDY IN AUSTRALIA</p>

@@ -10,6 +10,7 @@ use App\Models\ExamDetails;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
+use PDF;
 
 class IndexController extends Controller
 {
@@ -23,15 +24,16 @@ class IndexController extends Controller
         $this->validate($request, [
             'first_name' => 'required',
             'email' => 'required|unique:students,email',
-            'phone' => 'required|unique:students,phone',
+            'phone' => 'required|unique:students,phone|max:10',
         ],[
-            'email,unique' => "Email is already used",
-            'phone,unique' => "Phone is already used"
+            'email.unique' => "Email is already used",
+            'phone.unique' => "Phone is already used",
+            'phone.max' => "Please enter a valid phone number"
         ]);
         $us = new Students($request->all());
         $us->remember_token = Str::random(8).Carbon::now()->timestamp;
         $us->save();
-        return redirect(url('/test/'.$us->remember_token));
+        return redirect(url('test/'.$us->remember_token));
     }
 
     public function showTest(Students $rememberToken)
@@ -88,5 +90,23 @@ class IndexController extends Controller
     {
         $examDetails = ExamDetails::where('student_id', $rememberToken->id)->first();
         return view('result.index', ['student' => $rememberToken, 'examDetail' => $examDetails]);
+    }
+
+    
+
+    public function downloadPDF($id) {
+        $examDetails = ExamDetails::findOrFail($id);
+
+        $studentInfo = Students::findOrFail($examDetails->student_id);
+
+        $dataPDF = [
+            'title' => 'Writing result of '.$studentInfo->first_name.' '.$studentInfo->last_name,
+            'content' => $examDetails->writing,
+            'word_count' => str_word_count($examDetails->writing)
+        ];
+    
+        $pdf = PDF::loadView('layout.resultPDF', $dataPDF);
+        
+        return $pdf->download('writing-result.pdf');
     }
 }

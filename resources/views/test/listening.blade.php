@@ -1,8 +1,8 @@
 <div class="col-12 p-0 mt-3">
-    <h5 class="font-weight-bold">I. LISTENING</h5>
-    <h6 class="font-weight-bold m-0">Section 1</h6>
+    <h5 class="font-weight-bold section-title"><span>I. LISTENING</span></h5>
+    <h6 class="font-weight-bold my-2">Section 1</h6>
     <p class="font-weight-bold m-0">Question 1 - 5</p>
-    <p class="font-weight-bold m-0">Listen to the conversation and complete the message pads.</p>
+    <p class="font-weight-bold mb-2">Listen to the conversation and complete the message pads.</p>
     <audio controls>
         <source src="{{ asset(url('audio/SECTION1.mp3')) }}" type="audio/mpeg">
     </audio>
@@ -47,13 +47,14 @@
                         <span class="checkmark"></span>
                     </label>
                     </td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
     </div>
     <!-- listen section 2 -->
     <div class="section-2">
-        <h5><b>Section 2</b></h5>
+        <h6 class="font-weight-bold my-2">Section 2</h6>
         <audio controls>
             <source src="{{ asset(url('audio/SECTION2.mp3')) }}" type="audio/mpeg">
         </audio>
@@ -144,8 +145,8 @@
     </div>
     <!-- listen section 3 -->
     <div class='section-3'>
-        <h5><b>Section 3</b></h5>
-        <h6><b>Questions 10 - 14</b></h6>
+        <h6 class="font-weight-bold my-2">Section 3</h6>
+        <p><b>Questions 10 - 14</b></p>
         <audio controls>
             <source src="{{ asset(url('audio/SECTION3.mp3')) }}" type="audio/mpeg">
         </audio>
@@ -173,8 +174,8 @@
     </div>
     <!-- listen section 4 -->
     <div class='section-4 mt-3'>
-        <h5><b>Section 4</b></h5>
-        <h6><b>Questions 10 - 14</b></h6>
+        <h6 class="font-weight-bold my-2">Section 4</h6>
+        <p><b>Questions 10 - 14</b></p>
         <b>Listen to the conversation and complete the notes.</b>
         <p>Write no more than <b>TWO WORDS AND/OR A NUMBER</b> for each answer.</p>
         <audio controls>
