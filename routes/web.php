@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,4 +20,5 @@ Route::get('/test/{remember_token}',[IndexController::class, 'showTest']);
 Route::post('/test/{remember_token}',[IndexController::class, 'doTest']);
 
 Route::get('/result/{remember_token}',[IndexController::class, 'showResult']);
+Route::get('/admin/{remember_token}',[AdminController::class, 'showResult']);
 Route::get('/writingResultPDF/{id}',[IndexController::class, 'downloadPDF']);

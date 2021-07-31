@@ -1,11 +1,14 @@
 <div class="col-12 p-0 mt-3">
+    
     <h5 class="font-weight-bold section-title"><span>I. LISTENING</span></h5>
-    <h6 class="font-weight-bold my-2">Section 1</h6>
+    <h6 class="font-weight-bold m-0">Section 1</h6>
     <p class="font-weight-bold m-0">Question 1 - 5</p>
-    <p class="font-weight-bold mb-2">Listen to the conversation and complete the message pads.</p>
-    <audio controls>
-        <source src="{{ asset(url('audio/SECTION1.mp3')) }}" type="audio/mpeg">
+    <p class="font-weight-bold m-0">Listen to the conversation and complete the message pads.</p>
+    <audio id="myAudio" src="{{ asset(url('audio/SECTION1.mp3')) }}" >
     </audio>
+    <button id="pause" onClick="togglePlay()">Click here to hear.</button>
+
+
     <!-- listen section 1 -->
     <div class='section-1 mt-3'>
         <table class="w-100 mb-4 mt-2">
