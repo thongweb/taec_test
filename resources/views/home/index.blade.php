@@ -26,7 +26,7 @@
 							value="{{ old('email') }}"></span> </label></p>
 
 			<p><label> Số điện thoại:<br>
-					<span class="wpcf7-form-control-wrap tel-606"><input type="number" 
+					<span class="wpcf7-form-control-wrap tel-606"><input type="text" 
 							name="phone" value="{{ old('phone') }}"
 							class="{{ $errors->has('phone') ? ' is-invalid' : '' }}" /></span></label></p>
 			<p><label> Khóa học cần tư vấn / Điểm số mong muốn:<br>

@@ -23,12 +23,13 @@ class IndexController extends Controller
     {
         $this->validate($request, [
             'first_name' => 'required',
-            'email' => 'required|unique:students,email',
-            'phone' => 'required|unique:students,phone|max:10',
+            'email' => 'required|unique:students,email|email',
+            'phone' => 'required|unique:students,phone|max:10|regex:/^[0-9-]+$/',
         ],[
             'email.unique' => "Email is already used",
             'phone.unique' => "Phone is already used",
-            'phone.max' => "Please enter a valid phone number"
+            'phone.regex' => "Please enter a valid phone number",
+            'phone.max' => "Please enter a valid phone number",
         ]);
         $us = new Students($request->all());
         $us->remember_token = Str::random(8).Carbon::now()->timestamp;

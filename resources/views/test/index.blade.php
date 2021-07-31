@@ -27,7 +27,7 @@
             <input type="hidden" value="" name="exam_time" id="exam_time">
             <input class='btn btn-danger mt-2 text-white' id="btn-check-word" type="button" onclick="checkWords()" value="Check count words">
             <br>
-            <input class='btn mt-4 btn-successs' type="submit" value='Hoàn thành'>
+            <input class='btn my-4 btn-successs' type="submit" value='Hoàn thành'>
         </form>
     </div>
 </div>
