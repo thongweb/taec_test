@@ -58,7 +58,7 @@
                 <hr class="mb-4" style="border: 1px solid">
                 <div class="col-12 form-group row align-items-center">
                     <dt class="col-4">Writing result: </dt>
-                    <a class="btn btn-primary" href="{{url('writingResultPDF/'.$examDetail->id)}}">Download PDF</a>
+                    <a class="btn btn-primary" href=@if(!is_null($examDetail)) "{{url('writingResultPDF/'.$examDetail->id)}}" @endif>Download PDF</a>
                 </div>
                 <div class="col-12 form-group row">
                     <dt class="col-4">Total words: </dt>

@@ -21,4 +21,5 @@ Route::post('/test/{remember_token}',[IndexController::class, 'doTest']);
 
 Route::get('/result/{remember_token}',[IndexController::class, 'showResult']);
 Route::get('/admin/view-score/{remember_token}',[AdminController::class, 'showResult']);
+Route::get('/admin/load-database/taec-test/all',[AdminController::class, 'showDatabase']);
 Route::get('/writingResultPDF/{id}',[IndexController::class, 'downloadPDF']);

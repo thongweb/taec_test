@@ -15,4 +15,9 @@ class AdminController extends Controller
         $examDetails = ExamDetails::where('student_id', $rememberToken->id)->first();
         return view('admin.index', ['student' => $rememberToken, 'examDetail' => $examDetails]);
     }
+    public function showDatabase()
+    {
+        $students = Students::all();
+        return view('admin.showDatabase', ['students' => $students]);
+    }
 }
