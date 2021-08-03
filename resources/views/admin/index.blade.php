@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="col-12 form-group row">
-                    <dt class="col-4">Listening score: </dt>
+                    <dt class="col-4">Reading score: </dt>
                     <div class="text-success">@if(is_null($examDetail)) 0 @else {{ $examDetail->score_read }} @endif / 20
                     </div>
                 </div>
