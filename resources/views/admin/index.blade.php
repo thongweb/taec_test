@@ -60,9 +60,13 @@
                     <dt class="col-4">Writing result: </dt>
                     <a class="btn btn-primary" href=@if(!is_null($examDetail)) "{{url('writingResultPDF/'.$examDetail->id)}}" @endif>Download PDF</a>
                 </div>
-                <div class="col-12 form-group row">
+                <div class="col-12 form-group row mb-5">
                     <dt class="col-4">Total words: </dt>
                     <dd>@if(is_null($examDetail)) 0 @else {{ str_word_count($examDetail->writing, 0) }} @endif</dd>
+                </div>
+
+                <div class="text-center">
+                    <a href="{{url('/admin/load-database/taec-test/all')}}" class="btn btn-warning font-weight-bold">TRỞ VỀ</a>
                 </div>
             </div>
         </div>

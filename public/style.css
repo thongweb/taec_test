@@ -331,3 +331,5 @@ textarea {
     background: grey;
     margin-top: 15px;
 }
+
+.table th, .table td { vertical-align: middle !important; }
