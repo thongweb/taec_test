@@ -17,7 +17,7 @@ class AdminController extends Controller
     }
     public function showDatabase()
     {
-        $students = Students::all();
-        return view('admin.showDatabase', ['students' => $students]);
+        $result = ExamDetails::all();
+        return view('admin.showDatabase', ['result' => $result]);
     }
 }

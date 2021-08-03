@@ -26,4 +26,8 @@ class ExamDetails extends Model
     protected $hidden = [
         'remember_token',
     ];
+
+    function student(){
+        return $this->belongsTo("App\Models\Students");
+    }
 }

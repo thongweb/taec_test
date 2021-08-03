@@ -26,8 +26,14 @@ class Students extends Model
     protected $hidden = [
         'remember_token',
     ];
+
     function getRouteKeyName()
     {
         return 'remember_token';
+    }
+
+    function examDetail()
+    {
+        return $this->hasOne('App\Models\ExamDetails');
     }
 }
