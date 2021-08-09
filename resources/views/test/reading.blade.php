@@ -287,11 +287,11 @@
             <p class="p-0 my-2 text-justify">Rubik was inspired by geometric puzzles such as the Chinese tangram, a puzzle consisting of
                 various triangles, a square and a parallelogram which can be combined to create different shapes and
                 figures. However, unlike the tangram, which is two-dimensional, Rubik was more interested in investigating
-                how three-dimensional forms, such as the cube, could be moved and combined to produce other forms</p>
+                how three-dimensional forms, such as the cube, could be moved and combined to produce other forms.</p>
             <p class="p-0 my-2 text-justify">His design consisted of a cube made up of layers of individual smaller cubes, and each
                 smaller cube could be turned in any direction except diagonally. To ensure that the cubes could move
                 independently, without falling apart, Rubik first attempted to join them using elastic bands. However, this
-                proved to be impossible, so Rubik then solved the problem by essembling them using a rounded interior</p>
+                proved to be impossible, so Rubik then solved the problem by essembling them using a rounded interior.</p>
             <p class="p-0 my-2 text-justify">This permitted them to move smoothly and easily. He experimented with different ways of
                 making the smaller cubes, but ended up with the simple solution of giving a different colour to each side.
                 The object was to twist the layers of small cubes so that each side of the large cube was an identical
@@ -309,13 +309,13 @@
                 <p class="my-2">Complete the summary. Choose <span class="font-weight-bold">NO MORE THAN TWO WORDS</span> from the passage for each answer.</p>
                 <div class="border border-dark p-2">
                     <div class="col-12 p-0"><span>Originally named after the Magic Cube, Rubik’s Cube consists of a number of smaller cubes organised in <input type="input" placeholder="15" class="form__field"
-                        name="read_15" />The smaller cubes can be twisted in almost any way, though not <input type="input" placeholder="16" class="form__field"
-                        name="read_16" />The Cube’s <input type="input" placeholder="17"
-                        class="form__field" name="read_17" /></span></div>
-                    <div class="col-12 p-0"><span>is shaped in a way that allows the smaller cubes to move smoothly. Each side of the smaller cubes has a different colour, and the aim of the puzzle is to organise the cubes so that the colours on the sides of the large cube are </span></div>
+                        name="read_15" />. The smaller cubes can be twisted in almost any way, though not <input type="input" placeholder="16" class="form__field"
+                        name="read_16" />. The Cube’s <input type="input" placeholder="17"
+                        class="form__field" name="read_17" /><span> is shaped in a way that allows the smaller cubes to move smoothly.</span></div>
+                    <div class="col-12 p-0">Each side of the smaller cubes has a different colour, and the aim of the puzzle is to organise the cubes so that the colours on the sides of the large cube are </span></div>
                     <div class="col-12 p-0"><span><input type="input" placeholder="18"
-                        class="form__field" name="read_18" />The manufacturer of the puzzle changed the name of the cube to the name of its<input type="input"
-                        class="form__field" placeholder="19" name="read_19" /><span>It has now sold more than any other <input type="input"
+                        class="form__field" name="read_18" />. The manufacturer of the puzzle changed the name of the cube to the name of its<input type="input"
+                        class="form__field" placeholder="19" name="read_19" /><span>. It has now sold more than any other <input type="input"
                             class="form__field" placeholder="20" name="read_20" /> in the world. </span></div>
                 </div>
         </div>

@@ -40,6 +40,16 @@
                 </tr>
                 <tr>
                     <td class="pl-2">
+                        <label class="label-radius">Please call.
+                            <input type="radio" value="Please call" checked='true'>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="label-radius">He/She will call you.
+                            <input type="radio" value="He/She will call you">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td class="pl-2">
                         <span class="font-weight-bold">5.</span>
                         <input type="hidden" name="listen_5" value="" checked='true'>
                         <label class="label-radius">Please call.
@@ -51,7 +61,6 @@
                             <span class="checkmark"></span>
                         </label>
                     </td>
-                    <td></td>
                 </tr>
             </tbody>
         </table>

@@ -7,11 +7,11 @@
             <h4 class="text-center"><u>IELTS PLACEMENT TEST</u></h4>
             <div class="form-group d-flex col-12 pt-2">
                 <dt class="col-md-1 col-4">Name: </dt>
-                <dd class="col-md-1 col-3">{{ $student-> last_name }} {{ $student->first_name }}</dd>
+                <dd class="col-md-3 col-8">{{ $student-> last_name }} {{ $student->first_name }}</dd>
             </div>
             <div class="form-group d-flex col-12">
                 <dt class="col-md-1 col-4">Phone: </dt>
-                <dd class="col-md-1 col-3 text-white text-white-ios">{{ $student-> phone }}</dd>
+                <dd class="col-md-2 col-3 text-white text-white-ios">{{ $student-> phone }}</dd>
             </div>
             <div class="form-group d-flex col-12">
                 <dt class="col-md-1 col-4 pr-md-0">Time left: </dt>
@@ -33,6 +33,7 @@
 </div>
 
 <script>
+    var showAlert = true;
     var startTime = document.getElementById('get-time').value;
     var countDownDate = new Date(startTime.replace(/-/g, '/'));
     countDownDate.setMinutes(countDownDate.getMinutes() + 45);
@@ -51,34 +52,52 @@
     // Output the result in an element with id="demo"
     document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
     document.getElementById("exam_time").value = (45 - minutes) + "m " + (60 - seconds) + "s ";
-        
+    
+    if (showAlert && minutes < 5) {
+        alert('Time left 5 minutes')
+        showAlert = false;
+    }
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("test-form").submit()
     }
     }, 1000);
+
+    // enter note submit
+    document.querySelectorAll("input[type='input']").forEach((e) => {
+        e.addEventListener('keydown', function (e) {
+            if (e.keyCode == 13) {
+                e.preventDefault();
+            }
+        })
+    })
     
+    // check word
     function checkWords() {
         var contentWriting = document.getElementById('content-writing').value;
         var countString = contentWriting.match(/\w+/g).length;
         alert('You have ' + countString + ' words section writing.')
     }
+
     // audio 1
     var myAudio = document.getElementById("myAudio-1");
     myAudio.onplaying = function() {
     document.getElementById('audio-1').style.pointerEvents = 'none';
     };
+
     // audio 2
     var myAudio = document.getElementById("myAudio-2");
     myAudio.onplaying = function() {
     document.getElementById('audio-2').style.pointerEvents = 'none';
     };
+
     // audio 3
     var myAudio = document.getElementById("myAudio-3");
     myAudio.onplaying = function() {
     document.getElementById('audio-3').style.pointerEvents = 'none';
     };
+
     // audio 4
     var myAudio = document.getElementById("myAudio-4");
     myAudio.onplaying = function() {
