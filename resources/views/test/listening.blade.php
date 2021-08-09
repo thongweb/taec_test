@@ -51,6 +51,7 @@
                             <span class="checkmark"></span>
                         </label>
                     </td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>

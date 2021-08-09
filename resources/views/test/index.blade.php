@@ -5,17 +5,17 @@
     <div class="container bg-white">
         <div class="form-header p-3 font-weight-bold">
             <h4 class="text-center"><u>IELTS PLACEMENT TEST</u></h4>
-            <div class="form-group row">
-                <dt class="col-sm-1">Name: </dt>
-                <dd>{{ $student-> last_name }} {{ $student->first_name }}</dd>
+            <div class="form-group d-flex col-12 pt-2">
+                <dt class="col-md-1 col-4">Name: </dt>
+                <dd class="col-md-1 col-3">{{ $student-> last_name }} {{ $student->first_name }}</dd>
             </div>
-            <div class="form-group row">
-                <dt class="col-sm-1">Phone: </dt>
-                <dd>{{ $student-> phone }}</dd>
+            <div class="form-group d-flex col-12">
+                <dt class="col-md-1 col-4">Phone: </dt>
+                <dd class="col-md-1 col-3 text-white text-white-ios">{{ $student-> phone }}</dd>
             </div>
-            <div class="form-group row">
-                <dt class="col-sm-1">Time left: </dt>
-                <div id="countdown"><span id='minutes'></span></div>
+            <div class="form-group d-flex col-12">
+                <dt class="col-md-1 col-4 pr-md-0">Time left: </dt>
+                <div class="col-md-2 col-4" id="countdown"><span id='minutes'></span></div>
             </div>
         </div>
         <input type="hidden" value="{{ $student->created_at }}" id="get-time">
@@ -34,7 +34,7 @@
 
 <script>
     var startTime = document.getElementById('get-time').value;
-    var countDownDate = new Date(startTime);
+    var countDownDate = new Date(startTime.replace(/-/g, '/'));
     countDownDate.setMinutes(countDownDate.getMinutes() + 45);
     countDownDate = new Date(countDownDate);
     // Update the count down every 1 second
@@ -58,6 +58,7 @@
         document.getElementById("test-form").submit()
     }
     }, 1000);
+    
     function checkWords() {
         var contentWriting = document.getElementById('content-writing').value;
         var countString = contentWriting.match(/\w+/g).length;

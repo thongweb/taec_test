@@ -278,7 +278,7 @@
     <!-- Passage section 3 -->
     
     <p class="font-weight-bold m-0">Passage 3</p>
-    <div class="col-12 p-0 mt-3 d-flex reading-passage-3">
+    <div class="col-12 p-0 mt-3 d-flex flex-column flex-md-row reading-passage-3">
         <div class="col-sm-6 reading-passage-3-left">
             <p class="font-weight-bold m-0 text-center">RUBIK CUBE</p>
             <p class="p-0 mb-2 text-justify">Erno Rubik first studied scrupture and then later architecture in Pudapest, where he went on
