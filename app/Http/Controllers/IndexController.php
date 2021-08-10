@@ -90,7 +90,22 @@ class IndexController extends Controller
     public function showResult(Students $rememberToken)
     {
         $examDetails = ExamDetails::where('student_id', $rememberToken->id)->first();
-        return view('result.index', ['student' => $rememberToken, 'examDetail' => $examDetails]);
+
+        $studentAnswer = StudentAnswers::where('student_id', $rememberToken->id)->get();
+
+        $questionAnswers = Questions::where('exam_id', 1)->get();
+
+        $arraySA = [];
+        foreach($studentAnswer as $sa){
+            $arraySA[$sa->question_name] = $sa->answer;            
+        }
+
+        $arrayQA = [];
+        foreach($questionAnswers as $qa){
+            $arrayQA[$qa->question_name] = $qa->correct_answer;            
+        }
+
+        return view('result.index', ['student' => $rememberToken, 'examDetail' => $examDetails, 'studentAnswer' => $arraySA, 'questionAnswer' => $arrayQA]);
     }
 
     public function downloadPDF($id) {

@@ -346,3 +346,6 @@ textarea {
 
 .table th, .table td { vertical-align: middle !important; }
 .text-white-ios { color: rgb(255, 255, 255); -webkit-text-fill-color: rgb(255, 255, 255);  }
+
+ul, li { list-style: none; }
+.listening-result h6, .reading-result h6 { background: #dee2e6; }
