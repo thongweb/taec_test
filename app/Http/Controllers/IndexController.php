@@ -108,19 +108,36 @@ class IndexController extends Controller
         return view('result.index', ['student' => $rememberToken, 'examDetail' => $examDetails, 'studentAnswer' => $arraySA, 'questionAnswer' => $arrayQA]);
     }
 
-    public function downloadPDF($id) {
+    public function downloadPDF($id, Request $request) {
         $examDetails = ExamDetails::findOrFail($id);
 
         $studentInfo = Students::findOrFail($examDetails->student_id);
 
+        $studentAnswer = StudentAnswers::where('student_id', $examDetails->student_id)->get();
+
+        $arraySA = [];
+        foreach($studentAnswer as $sa){
+            $arraySA[$sa->question_name] = $sa->answer;            
+        }
+
+        $questionAnswers = Questions::where('exam_id', 1)->get();
+        $arrayQA = [];
+        foreach($questionAnswers as $qa){
+            $arrayQA[$qa->question_name] = $qa->correct_answer;            
+        }
+
         $dataPDF = [
-            'title' => 'Writing result of '.$studentInfo->first_name.' '.$studentInfo->last_name,
+            'title' => 'Test result of '.$studentInfo->first_name.' '.$studentInfo->last_name,
             'content' => $examDetails->writing,
-            'word_count' => str_word_count($examDetails->writing)
+            'word_count' => str_word_count($examDetails->writing),
+            'studentAnswer' => $arraySA,
+            'questionAnswer' => $arrayQA,
+            'examDetail' => $examDetails,
+            'studentInfo' => $studentInfo
         ];
     
         $pdf = PDF::loadView('layout.resultPDF', $dataPDF);
         
-        return $pdf->download('writing-result-'.$studentInfo->first_name.'.pdf');
+        return $pdf->download('test-result-'.$studentInfo->first_name.'.pdf');
     }
 }
