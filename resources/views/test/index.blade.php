@@ -2,19 +2,15 @@
 
 @section('body')
 <div class="test-content">
-    <div class="container bg-white">
-        <div class="form-header p-3 font-weight-bold">
+    <div class="container bg-white position-relative">
+        <div class="form-header p-1 p-md-3 font-weight-bold">
             <h4 class="text-center"><u>IELTS PLACEMENT TEST</u></h4>
-            <div class="form-group d-flex col-12 pt-2">
-                <dt class="col-md-1 col-4">Name: </dt>
+            <div class="d-flex col-12 pt-2">
+                <dt class="col-md-2 col-4 col-lg-1">Name:  </dt>
                 <dd class="col-md-3 col-8">{{ $student-> last_name }} {{ $student->first_name }}</dd>
             </div>
-            <div class="form-group d-flex col-12">
-                <dt class="col-md-1 col-4">Phone: </dt>
-                <dd class="col-md-2 col-3 text-white text-white-ios">{{ $student-> phone }}</dd>
-            </div>
-            <div class="form-group d-flex col-12">
-                <dt class="col-md-1 col-4 pr-md-0">Time left: </dt>
+            <div class="d-flex col-12 pb-2">
+                <dt class="col-md-2 col-4 pr-md-0 col-lg-1">Time left: </dt>
                 <div class="col-md-2 col-4" id="countdown"><span id='minutes'></span></div>
             </div>
         </div>

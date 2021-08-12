@@ -19,11 +19,11 @@
             <p class="my-2">Read the text and choose <span class="font-weight-bold">YES</span> or <span
                     class="font-weight-bold">NO</span> for each of the following statement. </p>
             <p class="my-2">Are the following statements true?</p>
-            <div class="col-12 d-flex p-0 align-items-center flex-column flex-md-row">
-                <div class="col-8 p-0">
+            <div class="col-12 d-flex p-0 align-items-center flex-column flex-lg-row">
+                <div class="col-12 col-lg-8 p-0">
                     <span><b>1.</b> Australia is a young country.</span>
                 </div>
-                <div class="col-4 p-0 d-flex justify-content-around">
+                <div class="col-12 p-0 col-lg-4 d-flex justify-content-around">
                     <input type="hidden" name="read_1" value="" checked="true">
                     <label class="label-radius">Yes
                         <input type="radio" name="read_1" value="YES">
@@ -35,11 +35,11 @@
                     </label>
                 </div>
             </div>
-            <div class="col-12 d-flex p-0 align-items-center flex-column flex-md-row">
-                <div class="col-8 p-0">
+            <div class="col-12 d-flex p-0 align-items-center flex-column flex-lg-row">
+                <div class="col-12 col-lg-8 p-0">
                     <span><b>2.</b> The teachers are also easy to make friends.</span>
                 </div>
-                <div class="col-4 p-0 d-flex justify-content-around">
+                <div class="col-12 p-0 col-lg-4 d-flex justify-content-around">
                     <input type="hidden" name="read_2" value="" checked="true">
                     <label class="label-radius">Yes
                         <input type="radio" name="read_2" value="YES">
@@ -51,11 +51,11 @@
                     </label>
                 </div>
             </div>
-            <div class="col-12 d-flex p-0 align-items-center flex-column flex-md-row">
-                <div class="col-8 p-0">
+            <div class="col-12 d-flex p-0 align-items-center flex-column flex-lg-row">
+                <div class="col-12 col-lg-8 p-0">
                     <span><b>3.</b> 0-week is in the second week of the academic year.</span>
                 </div>
-                <div class="col-4 p-0 d-flex justify-content-around">
+                <div class="col-12 p-0 col-lg-4 d-flex justify-content-around">
                     <input type="hidden" name="read_3" value="" checked="true">
                     <label class="label-radius">Yes
                         <input type="radio" name="read_3" value="YES">
@@ -67,11 +67,11 @@
                     </label>
                 </div>
             </div>
-            <div class="col-12 d-flex p-0 align-items-center flex-column flex-md-row">
-                <div class="col-8 p-0">
+            <div class="col-12 d-flex p-0 align-items-center flex-column flex-lg-row">
+                <div class="col-12 col-lg-8 p-0">
                     <span><b>4.</b> Some students are from other countries.</span>
                 </div>
-                <div class="col-4 p-0 d-flex justify-content-around">
+                <div class="col-12 p-0 col-lg-4 d-flex justify-content-around">
                     <input type="hidden" name="read_4" value="" checked="true">
                     <label class="label-radius">Yes
                         <input type="radio" name="read_4" value="YES">
@@ -83,11 +83,11 @@
                     </label>
                 </div>
             </div>
-            <div class="col-12 d-flex p-0 align-items-center flex-column flex-md-row">
-                <div class="col-8 p-0">
+            <div class="col-12 d-flex p-0 align-items-center flex-column flex-lg-row">
+                <div class="col-12 col-lg-8 p-0">
                     <span><b>5.</b> The host students are new students.</span>
                 </div>
-                <div class="col-4 p-0 d-flex justify-content-around">
+                <div class="col-12 p-0 col-lg-4 d-flex justify-content-around">
                     <input type="hidden" name="read_5" value="" checked="true">
                     <label class="label-radius">Yes
                         <input type="radio" name="read_5" value="YES">
@@ -127,11 +127,11 @@
             <p class="font-weight-bold m-0">Read the text and answer following question.</p>
             <p class="my-2">Are the following statements <span class="font-weight-bold">TRUE</span> or <span
                     class="font-weight-bold">FALSE</span>?</p>
-            <div class="col-12 d-flex p-0 align-items-center flex-column flex-md-row">
-                <div class="col-8 p-0">
+            <div class="col-12 d-flex p-0 align-items-center flex-column flex-lg-row">
+                <div class="col-lg-8 col-12 p-0">
                     <span><b>6.</b> There are two ways to start a conversation.</span>
                 </div>
-                <div class="col-4 p-0 d-flex justify-content-around">
+                <div class="col-lg-4 col-12 p-0 d-flex justify-content-around">
                     <input type="hidden" name="read_6" value="" checked="true">
                     <label class="label-radius">True
                         <input type="radio" name="read_6" value="TRUE">
@@ -143,11 +143,11 @@
                     </label>
                 </div>
             </div>
-            <div class="col-12 d-flex p-0 align-items-center flex-column flex-md-row">
-                <div class="col-8 p-0">
+            <div class="col-12 d-flex p-0 align-items-center flex-column flex-lg-row">
+                <div class="col-lg-8 col-12 p-0">
                     <span><b>7.</b> It is a good idea to talk about serious topics when you meet someone new.</span>
                 </div>
-                <div class="col-4 p-0 d-flex justify-content-around">
+                <div class="col-lg-4 col-12 p-0 d-flex justify-content-around">
                     <input type="hidden" name="read_7" value="" checked="true">
                     <label class="label-radius">True
                         <input type="radio" name="read_7" value="TRUE">
@@ -159,11 +159,11 @@
                     </label>
                 </div>
             </div>
-            <div class="col-12 d-flex p-0 align-items-center flex-column flex-md-row">
-                <div class="col-8 p-0">
+            <div class="col-12 d-flex p-0 align-items-center flex-column flex-lg-row">
+                <div class="col-lg-8 col-12 p-0">
                     <span><b>8.</b> It is more important to listen than to talk.</span>
                 </div>
-                <div class="col-4 p-0 d-flex justify-content-around">
+                <div class="col-lg-4 col-12 p-0 d-flex justify-content-around">
                     <input type="hidden" name="read_8" value="" checked="true">
                     <label class="label-radius">True
                         <input type="radio" name="read_8" value="TRUE">
@@ -175,11 +175,11 @@
                     </label>
                 </div>
             </div>
-            <div class="col-12 d-flex p-0 align-items-center flex-column flex-md-row">
-                <div class="col-8 p-0">
+            <div class="col-12 d-flex p-0 align-items-center flex-column flex-lg-row">
+                <div class="col-lg-8 col-12 p-0">
                     <span><b>9.</b> Most good friends are different from each other.</span>
                 </div>
-                <div class="col-4 p-0 d-flex justify-content-around">
+                <div class="col-lg-4 col-12 p-0 d-flex justify-content-around">
                     <input type="hidden" name="read_9" value="" checked="true">
                     <label class="label-radius">True
                         <input type="radio" name="read_9" value="TRUE">
@@ -191,11 +191,11 @@
                     </label>
                 </div>
             </div>
-            <div class="col-12 d-flex p-0 align-items-center flex-column flex-md-row">
-                <div class="col-8 p-0">
+            <div class="col-12 d-flex p-0 align-items-center flex-column flex-lg-row">
+                <div class="col-lg-8 col-12 p-0">
                     <span><b>10.</b> The Internet is not always a good way to make friends.</span>
                 </div>
-                <div class="col-4 p-0 d-flex justify-content-around">
+                <div class="col-lg-4 col-12 p-0 d-flex justify-content-around">
                     <input type="hidden" name="read_10" value="" checked="true">
                     <label class="label-radius">True
                         <input type="radio" name="read_10" value="TRUE">
@@ -207,11 +207,11 @@
                     </label>
                 </div>
             </div>
-            <div class="col-12 d-flex p-0 align-items-center flex-column flex-md-row">
-                <div class="col-8 p-0">
+            <div class="col-12 d-flex p-0 align-items-center flex-column flex-lg-row">
+                <div class="col-lg-8 col-12 p-0">
                     <span><b>11.</b> A sports team is the best way to meet new friends</span>
                 </div>
-                <div class="col-4 p-0 d-flex justify-content-around">
+                <div class="col-lg-4 col-12 p-0 d-flex justify-content-around">
                     <input type="hidden" name="read_11" value="" checked="true">
                     <label class="label-radius">True
                         <input type="radio" name="read_11" value="TRUE">

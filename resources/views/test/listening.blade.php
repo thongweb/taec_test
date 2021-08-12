@@ -214,7 +214,7 @@
             <div class="col-12 p-0"><span>Type of accommodation preferred: apartment</span></div>
             <div class="col-12 p-0"><span>Number of people: 2</span></div>
             <div class="col-12 p-0"><span>Preferred location: wants to be closed to <input type="input"
-                        class="form__field" placeholder="17" name="listen_17" /> Price: maximum £<input type="input"
+                        class="form__field" placeholder="17" name="listen_17" /><br> Price: maximum £<input type="input"
                         class="form__field" placeholder="18" name="listen_18" /> per </span></div>
             <div class="col-12 p-0"><span>Additional note:</span></div>
             <div class="col-12 p-0"><span>I suggest Flat 3 at <input type="input" class="form__field" placeholder="19"
