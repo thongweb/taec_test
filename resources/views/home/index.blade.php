@@ -7,9 +7,9 @@
 			@csrf
 			<img src="{{ asset(url('logo_taec.jpg')) }}" alt="logo">
 			<div class="social-container">
-				<li class="social"><i class="fab fa-facebook-f"></i></li>
-				<li class="social"><i class="fab fa-google-plus-g"></i></li>
-				<li class="social"><i class="fab fa-linkedin-in"></i></li>
+				<li class="social"></li>
+				<li class="social"></li>
+				<li class="social"></li>
 			</div>
 			@if ($errors->any())
 			@foreach ($errors->all() as $error)

@@ -28,12 +28,12 @@
                 </tr>
                 <tr>
                     <td class="pl-2"><span class="searchformfld"><input type="input" class="candidateName form__field" placeholder=" " name="listen_1" /><label for="candidateName">1</label></span><span>
-                            called. Phone </span></td>
+                            called. </span></td>
                     <td class="pl-2"><span><span class="searchformfld"><input type="input" class="candidateName form__field" placeholder=" " name="listen_3" /><label for="candidateName">3</label></span>
                             called. </span> </span></td>
                 </tr>
                 <tr>
-                    <td class="pl-2"><span>number: <span class="searchformfld"><input type="input" class="candidateName form__field" placeholder=" " name="listen_2" /><label for="candidateName">2</label></span> </span>
+                    <td class="pl-2"><span>Phone number: <span class="searchformfld"><input type="input" class="candidateName form__field" placeholder=" " name="listen_2" /><label for="candidateName">2</label></span> </span>
                     </td>
                     <td class="pl-2"><span>Phone number: <span class="searchformfld"><input type="input" class="candidateName form__field" placeholder=" " name="listen_4" /><label for="candidateName">4</label></span> </span></td>
                 </tr>
