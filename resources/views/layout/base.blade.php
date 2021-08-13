@@ -11,6 +11,10 @@
     <base href="./">
     <!-- Bootstrap core CSS -->
     <link href="{{asset('bootstrap.css')}}" rel="stylesheet">
+
+    <!-- Fontawesome CSS -->
+    <link href="{{asset('font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+
     <!-- Custom styles -->
     <link href="{{asset('custom.css')}}" rel="stylesheet">
     <link href="{{asset('style.css')}}" rel="stylesheet">

@@ -3,7 +3,7 @@
 @section('body')
 <div class="test-content">
     <div class="container bg-white position-relative">
-        <div class="form-header p-1 p-md-3 font-weight-bold">
+        <div class="form-header py-1 px-3 font-weight-bold">
             <h4 class="text-center m-0"><u>IELTS PLACEMENT TEST</u></h4>
             <div class="col-12 p-0 d-flex flex-lg-row flex-column">
                 <div class="d-flex col-md-6 col-12 pt-2 px-0">
@@ -11,8 +11,7 @@
                     <dd class="col-md-8 col-10">{{ $student-> last_name }} {{ $student->first_name }}</dd>
                 </div>
                 <div class="d-flex col-md-6 col-12 px-0">
-                    <dt class="col-md-3 col-4 pt-2 p-0 col-lg-3">Time left: </dt>
-                    <div class="col-md-8 col-8" id="countdown"><span id='minutes'></span></div>
+                    <dt class="col-md-3 col-4 pt-2 p-0 col-lg-12 d-flex align-items-center justify-content-end"><i class="fa fa-clock-o" aria-hidden="true"></i> &nbsp; Time left: &nbsp; <div id="countdown"><span id='minutes'></span></div></dt>
                 </div>
             </div>
         </div>
