@@ -308,15 +308,14 @@
                 <p class="font-weight-bold m-0">Questions 15 - 20</p>
                 <p class="my-2">Complete the summary. Choose <span class="font-weight-bold">NO MORE THAN TWO WORDS</span> from the passage for each answer.</p>
                 <div class="border border-dark p-2">
-                    <div class="col-12 p-0"><span>Originally named after the Magic Cube, Rubik’s Cube consists of a number of smaller cubes organised in <input type="input" placeholder="15" class="form__field"
-                        name="read_15" />. The smaller cubes can be twisted in almost any way, though not <input type="input" placeholder="16" class="form__field"
-                        name="read_16" />. The Cube’s <input type="input" placeholder="17"
-                        class="form__field" name="read_17" /><span> is shaped in a way that allows the smaller cubes to move smoothly.</span></div>
+                    <div class="col-12 p-0"><span>Originally named after the Magic Cube, Rubik’s Cube consists of a number of smaller cubes organised in <span class="searchformfld"><input type="input" placeholder=" " class="form__field candidateName" name="read_15" /><label for="candidateName">15</label></span>
+                    . The smaller cubes can be twisted in almost any way, though not <span class="searchformfld"><input type="input" placeholder=" " class="form__field candidateName" name="read_16" /><label for="candidateName">16</label></span>
+                    . The Cube’s <span class="searchformfld"><input type="input" placeholder=" " class="form__field candidateName" name="read_17" /><label for="candidateName">17</label></span><span> 
+                        is shaped in a way that allows the smaller cubes to move smoothly.</span></div>
                     <div class="col-12 p-0">Each side of the smaller cubes has a different colour, and the aim of the puzzle is to organise the cubes so that the colours on the sides of the large cube are </span></div>
-                    <div class="col-12 p-0"><span><input type="input" placeholder="18"
-                        class="form__field" name="read_18" />. The manufacturer of the puzzle changed the name of the cube to the name of its<input type="input"
-                        class="form__field" placeholder="19" name="read_19" /><span>. It has now sold more than any other <input type="input"
-                            class="form__field" placeholder="20" name="read_20" /> in the world. </span></div>
+                    <div class="col-12 p-0"><span><span class="searchformfld"><input type="input" placeholder=" " class="form__field candidateName" name="read_18" /><label for="candidateName">18</label></span>
+                    . The manufacturer of the puzzle changed the name of the cube to the name of its<span class="searchformfld"><input type="input" class="form__field candidateName" placeholder=" " name="read_19" /><label for="candidateName">19</label></span>
+                    <span>. It has now sold more than any other <span class="searchformfld"><input type="input" class="form__field candidateName" placeholder=" " name="read_20" /><label for="candidateName">20</label></span> in the world. </span></div>
                 </div>
         </div>
     </div>

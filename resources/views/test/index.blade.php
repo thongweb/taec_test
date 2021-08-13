@@ -4,14 +4,16 @@
 <div class="test-content">
     <div class="container bg-white position-relative">
         <div class="form-header p-1 p-md-3 font-weight-bold">
-            <h4 class="text-center"><u>IELTS PLACEMENT TEST</u></h4>
-            <div class="d-flex col-12 pt-2">
-                <dt class="col-md-2 col-4 col-lg-1">Name:  </dt>
-                <dd class="col-md-3 col-8">{{ $student-> last_name }} {{ $student->first_name }}</dd>
-            </div>
-            <div class="d-flex col-12 pb-2">
-                <dt class="col-md-2 col-4 pr-md-0 col-lg-1">Time left: </dt>
-                <div class="col-md-2 col-4" id="countdown"><span id='minutes'></span></div>
+            <h4 class="text-center m-0"><u>IELTS PLACEMENT TEST</u></h4>
+            <div class="col-12 p-0 d-flex flex-lg-row flex-column">
+                <div class="d-flex col-md-6 col-12 pt-1 px-0">
+                    <dt class="col-md-2 p-0 col-2 col-lg-1">Name:  </dt>
+                    <dd class="col-md-8 col-10">{{ $student-> last_name }} {{ $student->first_name }}</dd>
+                </div>
+                <div class="d-flex col-md-6 col-12 px-0">
+                    <dt class="col-md-3 col-4 pt-1 p-0 col-lg-3">Time left: </dt>
+                    <div class="col-md-8 col-8" id="countdown"><span id='minutes'></span></div>
+                </div>
             </div>
         </div>
         <input type="hidden" value="{{ $student->created_at }}" id="get-time">
@@ -29,36 +31,36 @@
 </div>
 
 <script>
-    var showAlert = true;
-    var startTime = document.getElementById('get-time').value;
-    var countDownDate = new Date(startTime.replace(/-/g, '/'));
-    countDownDate.setMinutes(countDownDate.getMinutes() + 45);
-    countDownDate = new Date(countDownDate);
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    // Get today's date and time
-    var now = new Date();
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+    // var showAlert = true;
+    // var startTime = document.getElementById('get-time').value;
+    // var countDownDate = new Date(startTime.replace(/-/g, '/'));
+    // countDownDate.setMinutes(countDownDate.getMinutes() + 45);
+    // countDownDate = new Date(countDownDate);
+    // // Update the count down every 1 second
+    // var x = setInterval(function() {
+    // // Get today's date and time
+    // var now = new Date();
+    // // Find the distance between now and the count down date
+    // var distance = countDownDate - now;
         
-    // Time calculations for days, hours, minutes and seconds
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // // Time calculations for days, hours, minutes and seconds
+    // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
-    document.getElementById("exam_time").value = (45 - minutes) + "m " + (60 - seconds) + "s ";
+    // // Output the result in an element with id="demo"
+    // document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
+    // document.getElementById("exam_time").value = (45 - minutes) + "m " + (60 - seconds) + "s ";
     
-    if (showAlert && minutes < 5) {
-        alert('Time left 5 minutes')
-        showAlert = false;
-    }
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("test-form").submit()
-    }
-    }, 1000);
+    // if (showAlert && minutes < 5) {
+    //     alert('Time left 5 minutes')
+    //     showAlert = false;
+    // }
+    // // If the count down is over, write some text 
+    // if (distance < 0) {
+    //     clearInterval(x);
+    //     document.getElementById("test-form").submit()
+    // }
+    // }, 1000);
 
     // enter note submit
     document.querySelectorAll("input[type='input']").forEach((e) => {

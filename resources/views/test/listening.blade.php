@@ -27,16 +27,15 @@
                     <td class="pl-2"><span><b>Message for:</b> Mary </span></td>
                 </tr>
                 <tr>
-                    <td class="pl-2"><span><input type="input" class="form__field" placeholder="1" name="listen_1" />
+                    <td class="pl-2"><span class="searchformfld"><input type="input" class="candidateName form__field" placeholder=" " name="listen_1" /><label for="candidateName">1</label></span><span>
                             called. Phone </span></td>
-                    <td class="pl-2"><span><input type="input" class="form__field" placeholder="3" name="listen_3" />
+                    <td class="pl-2"><span><span class="searchformfld"><input type="input" class="candidateName form__field" placeholder=" " name="listen_3" /><label for="candidateName">3</label></span>
                             called. </span> </span></td>
                 </tr>
                 <tr>
-                    <td class="pl-2"><span>number: <input type="input" class="form__field" placeholder="2"
-                                name="listen_2" /> </span></td>
-                    <td class="pl-2"><span>Phone number: <input type="input" class="form__field" placeholder="4"
-                                name="listen_4" /> </span></td>
+                    <td class="pl-2"><span>number: <span class="searchformfld"><input type="input" class="candidateName form__field" placeholder=" " name="listen_2" /><label for="candidateName">2</label></span> </span>
+                    </td>
+                    <td class="pl-2"><span>Phone number: <span class="searchformfld"><input type="input" class="candidateName form__field" placeholder=" " name="listen_4" /><label for="candidateName">4</label></span> </span></td>
                 </tr>
                 <tr>
                     <td class="pl-2">
@@ -207,20 +206,14 @@
             <div class="col-12 p-0"><span class="font-weight-bold">GOOD MOVES ACCOMMODATION AGENCY</span></div>
             <div class="col-12 p-0"><span>Call taken by: Ben</span></div>
             <div class="col-12 p-0"><span>Name: Clarice Willard</span></div>
-            <div class="col-12 p-0"><span>Telephone: &nbsp;<input type="input" placeholder="15" class="form__field"
-                        name="listen_15" /></span></div>
-            <div class="col-12 p-0"><span>Heard about us from &nbsp;&nbsp;<input type="input" placeholder="16"
-                        class="form__field" name="listen_16" /></span></div>
+            <div class="col-12 p-0"><span>Telephone: &nbsp;<span class="searchformfld"><input type="input" placeholder=" " class="candidateName form__field" name="listen_15" /><label for="candidateName">15</label></span></span></div>
+            <div class="col-12 p-0"><span>Heard about us from &nbsp;&nbsp;<span class="searchformfld"><input type="input" placeholder=" " class="candidateName form__field" name="listen_16" /><label for="candidateName">16</label></span></span></div>
             <div class="col-12 p-0"><span>Type of accommodation preferred: apartment</span></div>
             <div class="col-12 p-0"><span>Number of people: 2</span></div>
-            <div class="col-12 p-0"><span>Preferred location: wants to be closed to <input type="input"
-                        class="form__field" placeholder="17" name="listen_17" /><br> Price: maximum £<input type="input"
-                        class="form__field" placeholder="18" name="listen_18" /> per </span></div>
+            <div class="col-12 p-0"><span>Preferred location: wants to be closed to <span class="searchformfld"><input type="input" class="candidateName form__field" placeholder=" " name="listen_17" /><label for="candidateName">17</label></span> <br> Price: maximum £<span class="searchformfld"><input type="input" class="candidateName form__field" placeholder=" " name="listen_18" /><label for="candidateName">18</label></span>per </span></div>
             <div class="col-12 p-0"><span>Additional note:</span></div>
-            <div class="col-12 p-0"><span>I suggest Flat 3 at <input type="input" class="form__field" placeholder="19"
-                        name="listen_19" /> Road in Bampton.</span></div>
-            <div class="col-12 p-0"><span>I will send further details to customer by <input type="input"
-                        class="form__field" placeholder="20" name="listen_20" /></span></div>
+            <div class="col-12 p-0"><span>I suggest Flat 3 at <span class="searchformfld"><input type="input" class="candidateName form__field" placeholder=" " name="listen_19" /><label for="candidateName">19</label></span> Road in Bampton.</span></div>
+            <div class="col-12 p-0"><span>I will send further details to customer by <span class="searchformfld"><input type="input" class="candidateName form__field" placeholder=" " name="listen_20" /><label for="candidateName">20</label></span></span></div>
         </div>
     </div>
 </div>

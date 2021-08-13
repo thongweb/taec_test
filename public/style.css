@@ -251,7 +251,7 @@ button.ghost {
   z-index: 10;
 }
 #test-form {
-    margin-top: 200px;
+    margin-top: 130px;
 }
 .form-group .col-sm-1 {
     padding-right: 0px !important;
@@ -345,13 +345,53 @@ textarea {
 
 ul, li { list-style: none; }
 .listening-result h6, .reading-result h6 { background: #dee2e6; }
-
+table .form__field  { width: 37%; }
+/* placeholder input */
+.searchformfld{
+    position: relative;
+    margin: 5px 0px;
+}
+.searchformfld label{
+    position: absolute;
+    left: 32px;
+    top: 0px;
+    cursor: text;
+    opacity: 0.5;
+}
+.searchformfld input:focus + label,.searchformfld input:not(:placeholder-shown) + label{
+    opacity:0.5;
+    transform: scale(.9) translateY(-0%) translateX(-32px);
+    color:#000;
+}
+.searchformfld input{
+    padding-left: 10px;
+}
+.searchformfld label,.searchformfld input{
+    transition: all 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity:0.5;
+}
 /* Ipad */
 @media screen and (min-width: 768px) {
-    .form__field  { width: 19%; }
+    .form__field  { width: 17%; }
+    table .form__field  { width: 29%; }
+    .searchformfld label{
+        left: 45px;
+    }
+    .searchformfld input:focus + label,.searchformfld input:not(:placeholder-shown) + label{
+        transform: scale(.9) translateY(-0%) translateX(-45px);
+    }
 }
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
     .form__field  { width: 13%; }
+    table .form__field  { width: 22%; }
+    .searchformfld label{
+        left: 60px;
+    }
+    .searchformfld input:focus + label,.searchformfld input:not(:placeholder-shown) + label{
+        transform: scale(.9) translateY(-0%) translateX(-60px);
+    }
 }
