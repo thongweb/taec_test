@@ -13,7 +13,8 @@ class Students extends Model
         'last_name',
         'email',
         'phone',
-        'desired_score',
+        'state',
+        'course',
         'branch',
         'remember_token'
     ];
